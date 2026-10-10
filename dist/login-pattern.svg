@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <!-- Crisp Black & White Vertical Stripes -->
+    <pattern id="stripes-v" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="5" height="10" fill="#000000"/>
+      <rect x="5" width="5" height="10" fill="#ffffff"/>
+    </pattern>
+
+    <!-- Crisp Black & White Horizontal Stripes -->
+    <pattern id="stripes-h" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="5" fill="#000000"/>
+      <rect y="5" width="10" height="5" fill="#ffffff"/>
+    </pattern>
+
+    <!-- Black & White 45° Diagonal Stripes -->
+    <pattern id="stripes-d1" width="14" height="14" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="7" height="14" fill="#000000"/>
+      <rect x="7" width="7" height="14" fill="#ffffff"/>
+    </pattern>
+
+    <!-- Red & Black 45° Diagonal Stripes -->
+    <pattern id="stripes-red-d" width="14" height="14" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="7" height="14" fill="#FF0022"/>
+      <rect x="7" width="7" height="14" fill="#000000"/>
+    </pattern>
+
+    <!-- Crisp Checkerboard Pattern -->
+    <pattern id="checker" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#000000"/>
+      <rect x="8" width="8" height="8" fill="#ffffff"/>
+      <rect y="8" width="8" height="8" fill="#ffffff"/>
+      <rect x="8" y="8" width="8" height="8" fill="#000000"/>
+    </pattern>
+
+    <!-- Fine Polka Dot Grid -->
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#ffffff"/>
+      <circle cx="7" cy="7" r="2.4" fill="#000000"/>
+    </pattern>
+
+    <!-- Red Base with Black Micro Dots Grid -->
+    <pattern id="red-dot-grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#FF0022"/>
+      <circle cx="7" cy="7" r="2.4" fill="#000000"/>
+    </pattern>
+
+    <!-- Zig Zag Chevron Pattern -->
+    <pattern id="zigzag" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#ffffff"/>
+      <path d="M 0 12 L 6 0 L 12 12 L 18 0 L 24 12 L 24 24 L 18 12 L 12 24 L 6 12 L 0 24 Z" fill="#000000"/>
+    </pattern>
+
+    <!-- Overlapping Circles / Chain Ring Pattern -->
+    <pattern id="chain-rings" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#ffffff"/>
+      <circle cx="10" cy="10" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+      <circle cx="20" cy="0" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+      <circle cx="0" cy="20" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+      <circle cx="20" cy="20" r="8" fill="none" stroke="#000000" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <!-- Clean High-Brightness Background Base -->
+  <rect width="600" height="600" fill="#ffffff"/>
+
+  <!-- Geometric Triangular Mesh -->
+  <polygon points="0,0 140,0 0,115" fill="url(#stripes-red-d)"/>
+  <polygon points="140,0 320,0 140,32" fill="#ffffff"/>
+  <polygon points="320,0 470,0 320,105" fill="url(#zigzag)"/>
+  <polygon points="470,0 600,0 600,65" fill="#ffffff"/>
+  <polygon points="580,0 600,0 600,28" fill="#FF0022"/>
+  <polygon points="470,0 600,65 320,105" fill="url(#stripes-d1)"/>
+
+  <polygon points="0,115 140,32 145,225" fill="url(#stripes-d1)"/>
+  <polygon points="140,32 320,105 145,225" fill="url(#stripes-h)"/>
+  <polygon points="320,105 480,155 320,290" fill="#FF0022"/>
+  <polygon points="320,105 480,155 425,290" fill="url(#checker)"/>
+
+  <polygon points="480,155 600,65 600,150" fill="url(#stripes-v)"/>
+  <polygon points="480,155 600,150 480,225" fill="#000000"/>
+  <polygon points="480,225 600,150 600,380" fill="url(#stripes-d1)"/>
+
+  <polygon points="0,115 50,355 130,350" fill="url(#dots)"/>
+  <polygon points="0,115 130,350 0,390" fill="#ffffff"/>
+  <polygon points="50,120 145,225 130,350" fill="#FF0022"/>
+  
+  <polygon points="145,225 320,290 130,350" fill="url(#stripes-v)"/>
+  <polygon points="145,225 320,105 320,290" fill="url(#stripes-h)"/>
+  <polygon points="130,350 320,290 310,400" fill="#000000"/>
+
+  <polygon points="350,285 500,220 425,390" fill="#FF0022"/>
+  <polygon points="425,390 500,220 545,390" fill="url(#stripes-v)"/>
+
+  <polygon points="545,390 600,380 600,520" fill="url(#dots)"/>
+  <polygon points="545,390 600,380 430,480" fill="url(#stripes-d1)"/>
+
+  <polygon points="0,390 130,350 0,460" fill="url(#stripes-v)"/>
+  <polygon points="0,460 130,350 65,485" fill="url(#stripes-d1)"/>
+  <polygon points="0,460 65,485 0,600" fill="#ffffff"/>
+
+  <polygon points="50,480 385,525 50,600" fill="url(#red-dot-grid)"/>
+
+  <polygon points="65,485 310,400 385,525" fill="#ffffff"/>
+  <polygon points="65,485 385,525 200,600" fill="url(#stripes-d1)"/>
+  <polygon points="310,400 430,480 385,525" fill="#ffffff"/>
+
+  <polygon points="385,525 430,480 550,510" fill="url(#chain-rings)"/>
+
+  <polygon points="430,480 600,520 380,600" fill="url(#stripes-d1)"/>
+  <polygon points="430,480 600,380 600,520" fill="#000000"/>
+  <polygon points="360,530 600,600 360,600" fill="#ffffff"/>
+  <polygon points="360,530 420,600 360,600" fill="url(#zigzag)"/>
+  <polygon points="0,520 50,600 0,600" fill="#000000"/>
+
+  <!-- High Contrast Vector Line Outlines -->
+  <g stroke="#000000" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <path d="M 0,0 L 140,0 L 0,115 Z"/>
+    <path d="M 140,0 L 320,0 L 140,32 Z"/>
+    <path d="M 320,0 L 470,0 L 320,105 Z"/>
+    <path d="M 470,0 L 600,0 L 600,65 Z"/>
+    <path d="M 470,0 L 600,65 L 320,105 Z"/>
+    <path d="M 0,115 L 140,32 L 145,225 Z"/>
+    <path d="M 140,32 L 320,105 L 145,225 Z"/>
+    <path d="M 320,105 L 480,155 L 320,290 Z"/>
+    <path d="M 320,105 L 480,155 L 425,290 Z"/>
+    <path d="M 480,155 L 600,65 L 600,150 Z"/>
+    <path d="M 480,155 L 600,150 L 480,225 Z"/>
+    <path d="M 480,225 L 600,150 L 600,380 Z"/>
+    <path d="M 0,115 L 50,355 L 130,350 Z"/>
+    <path d="M 50,120 L 145,225 L 130,350 Z"/>
+    <path d="M 145,225 L 320,290 L 130,350 Z"/>
+    <path d="M 130,350 L 320,290 L 310,400 Z"/>
+    <path d="M 350,285 L 500,220 L 425,390 Z"/>
+    <path d="M 425,390 L 500,220 L 545,390 Z"/>
+    <path d="M 545,390 L 600,380 L 600,520 Z"/>
+    <path d="M 0,390 L 130,350 L 0,460 Z"/>
+    <path d="M 0,460 L 130,350 L 65,485 Z"/>
+    <path d="M 50,480 L 385,525 L 50,600 Z"/>
+    <path d="M 65,485 L 310,400 L 385,525 Z"/>
+    <path d="M 310,400 L 430,480 L 385,525 Z"/>
+    <path d="M 385,525 L 430,480 L 550,510 Z"/>
+    <path d="M 430,480 L 600,520 L 380,600 Z"/>
+    <path d="M 360,530 L 420,600 L 360,600 Z"/>
+  </g>
+</svg>
